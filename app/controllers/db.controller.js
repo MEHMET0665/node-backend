@@ -10,7 +10,7 @@ exports.create = (req, res) => {
   const customer = new Customer ({
 	name:req.body.name,
 	email:req.body.email,
-	phone:req.body.phone,
+	phone:Number(req.body.phone),
 	city:req.body.city,
 	country:req.body.country,
 	itemsSold:req.body.itemsSold,
